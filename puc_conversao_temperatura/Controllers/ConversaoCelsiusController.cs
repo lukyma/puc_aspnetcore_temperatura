@@ -12,7 +12,6 @@ namespace puc_conversao_temperatura.Controllers
         public async Task<IActionResult> ConverterCelsiusParaKelvin([FromBody] Temperatura temperatura)
         {
             return Ok($"{temperatura.ConvertCelsiusToKelvin()} K");
-
         }
     }
 }
